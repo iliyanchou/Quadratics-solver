@@ -2,27 +2,29 @@
 <html lang="en">
 
 <head>
-    <h1 class="heading"> Quadratic Solver</h1>
-    <h2 class="heading-2">The quadratic must be in form : ax<sup>2</sup> + bx + c = 0 </h2>
-    <link rel="stylesheet" href="quadratic.css">
-    <script src="quadratic.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quadratic.css">
+    <script src="quadratic.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
     <title>Quadratic calculator</title>
 
 </head>
 
 <body>
+    <h1 class="heading"> Quadratic Solver</h1>
+    <h2 class="heading-2">The quadratic must be in form : ax<sup>2</sup> + bx + c = 0 </h2>
     <input class="first" type="number" placeholder="Type coefficeint a" id="firstcoef">
     <input class="first" type="number" placeholder="Type coefficeint b" id="secondcoef">
     <input class="first" type="number" placeholder="Type coefficeint c" id="thirdcoef">
-    <button class="solve-button" onclick="solve()">Solve</button>
-
+    <button class="solve-button" onclick="solve(); graph()">Solve</button>
     <p>
     <div class="out3" id="output3"></div>
     <div class="out1" id="output1"></div>
     <div class="out2" id="output2"></div>
     </p>
+    <div class="graph-1" id="plot" style="width:750px;height:500px;"></div>
 
 </body>
 
