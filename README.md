@@ -6,7 +6,7 @@ Display the real roots of the quadratic equation, and tell you if the roots are 
 Graph the quadratic function and highlight the y intercept.
 
 Usage
-Open the web application in your browser.
+Open the web application in your browser. - https://iliyanchou.github.io/Quadratics-solver/
 Enter the coefficients a, b, and c for the quadratic equation ax² + bx + c = 0.
 Click the "Solve" button to see the roots of the equation.
 The graph of the quadratic function will be displayed with y intercept marked.
