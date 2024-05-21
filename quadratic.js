@@ -7,9 +7,9 @@ function solve() {
     var c = parseFloat(c);
     var discriminant = b * b - 4 * a * c;
     if (a == 0) {
+        alert("That's not a quadratic the coeficient 'a' has to be different than zero!")
         blank = "";
         let error = "That's not a quadratic the coeficient 'a' has to be different than zero!"
-        document.getElementById("output3").textContent = error;
         document.getElementById("output1").textContent = blank;
         document.getElementById("output2").textContent = blank;
     }
