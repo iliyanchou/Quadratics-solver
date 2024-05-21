@@ -1,12 +1,38 @@
 .heading {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: Caveat, Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
+@media screen and (max-width:560px) {
+    .heading {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .first {
+        width: 30px;
+        transition: width 0.3s;
+    }
+
+    .first:focus {
+        width: 200px;
+    }
+
+    .graph-1 {
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 .first {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -15,12 +41,18 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: inline-block;
+    border-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
 }
 
 .solve-button {
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -31,7 +63,8 @@
     border: none;
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
     transition: opacity 0.5s;
 }
@@ -62,8 +95,10 @@
 }
 
 .inputs {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
@@ -71,11 +106,16 @@
 }
 
 .graph-1 {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 500px;
 }
 
 .graphing {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
