@@ -18,30 +18,33 @@
 </head>
 
 <body>
-    <div class="heading">
-        <h1> Quadratic Solver</h1>
-    </div>
-    <div class="heading">
-        <h2>The quadratic must be in form : ax<sup>2</sup> + bx + c = 0 </h2>
-    </div>
-    <div class="inputs">
-        <input class="first" type="number" placeholder="Type coefficeint a" id="firstcoef">
-        <input class="first" type="number" placeholder="Type coefficeint b" id="secondcoef">
-        <input class="first" type="number" placeholder="Type coefficeint c" id="thirdcoef">
-        <div class="button">
-            <button class="solve-button" onclick="solve(); graph()">Solve</button>
-        </div>
-    </div>
+    <main>
+        <header class="heading">
+            <h1> Quadratic Solver</h1>
+        </header>
+        <article class="heading">
+            <h2>The quadratic must be in form : ax<sup>2</sup> + bx + c = 0 </h2>
+        </article>
+        <section class="inputs">
+            <input class="first" type="number" placeholder="Type coefficeint a" id="firstcoef">
+            <input class="first" type="number" placeholder="Type coefficeint b" id="secondcoef">
+            <input class="first" type="number" placeholder="Type coefficeint c" id="thirdcoef">
+            <section class="button">
+                <button class="solve-button" onclick="solve(); graph()">Solve</button>
+            </section>
+        </section>
 
 
-    <div class="graphing">
-        <div class="graph-1" id="plot" style="width:750px;height:500px;"></div>
-    </div>
-    <div class="outputs">
-        <div class="out3" id="output3"></div>
-        <div class="out1" id="output1"></div>
-        <div class="out2" id="output2"></div>
-    </div>
+        <aside class="graphing">
+            <div class="graph-1" id="plot" href="quadratic.css"></div>
+        </aside>
+        <aside class="outputs">
+            <div class="out3" id="output3"></div>
+            <div class="out1" id="output1"></div>
+            <div class="out2" id="output2"></div>
+        </aside>
+
+    </main>
 
 
 </body>
